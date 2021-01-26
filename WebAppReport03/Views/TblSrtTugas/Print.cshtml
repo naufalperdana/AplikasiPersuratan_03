@@ -1,0 +1,202 @@
+﻿@model WebAppReport03.Models.TblSrtTugas
+
+@{
+    ViewData["Title"] = "Print";
+}
+
+<div id="SrtTgs">
+    <table style="width: 732px; height: 459px;">
+        <tbody>
+            <tr style="height: 18px;">
+                <td style="width: 722px; height: 18px;" colspan="7">
+                    <img width="722" height="105" src="~/Images/kop_surat2.png" alt="" /><br /><br />
+                </td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 722px; height: 18px; text-align: center;" colspan="7">
+                    <p style="text-align: center;">
+                        <strong><u>SURAT TUGAS</u></strong>
+                        <br />
+                        Nomor : @Html.DisplayFor(model => model.No_Surat)
+                        <br /><br />
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px; vertical-align: top;">Menimbang</td>
+                <td style="width: 10px; height: 18px; vertical-align: top;">:</td>
+                <td style="width: 14px; height: 18px; vertical-align: top;">a.</td>
+                <td style="width: 586px; text-align: justify; vertical-align: top; height: 18px;" colspan="4">Bahwa sehubungan dengan pelaksanaan tugas dan fungsi organisasi di lingkungan Kantor Kementerian Agama Kota Tegal, dipandang perlu membuat surat tugas;</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px; vertical-align: top;">&nbsp;</td>
+                <td style="width: 10px; height: 18px; vertical-align: top;">&nbsp;</td>
+                <td style="width: 14px; height: 18px; vertical-align: top;">b.</td>
+                <td style="width: 586px; vertical-align: top; text-align: justify; height: 18px;" colspan="4">Bahwa mereka yang namanya dalam surat tugas ini, dipandang mampu dapat melaksanakan tugas sebagaimana dimaksud tersebut dalam dasar surat.</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px; vertical-align: top;">Dasar</td>
+                <td style="width: 10px; height: 18px; vertical-align: top;">:</td>
+                <td style="width: 14px; height: 18px; vertical-align: top;">1.</td>
+                <td style="width: 586px; vertical-align: top; text-align: justify; height: 18px;" colspan="4">@Html.DisplayFor(model => model.Dasar_1)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 14px; height: 18px; vertical-align: top;">2.</td>
+                <td style="width: 586px; vertical-align: top; text-align: justify; height: 18px;" colspan="4">@Html.DisplayFor(model => model.Dasar_2)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 14px; height: 18px;">&nbsp;</td>
+                <td style="width: 131px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 186px; height: 18px;">&nbsp;</td>
+                <td style="width: 241px; height: 18px;">&nbsp;</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 722px; height: 18px; text-align: center;" colspan="7">Memberi Tugas</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px; vertical-align: top;">Kepada</td>
+                <td style="width: 10px; height: 18px; vertical-align: top;">:</td>
+                <td style="width: 151px; height: 18px;" colspan="2">Nama</td>
+                <td style="width: 10px; height: 18px;">:</td>
+                <td style="width: 433px; height: 18px;" colspan="2">@Html.DisplayFor(model => model.Nama)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="height: 10px; width: 151px;" colspan="2">NIP</td>
+                <td style="width: 10px; height: 10px;">:</td>
+                <td style="width: 433px; height: 10px;" colspan="2">@Html.DisplayFor(model => model.NIP)</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 151px; height: 10px;" colspan="2">Pangkat/Gol. Ruang</td>
+                <td style="width: 10px; height: 10px;">:</td>
+                <td style="width: 433px; height: 10px;" colspan="2">@Html.DisplayFor(model => model.Pangkat_Gol)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 151px; height: 18px;" colspan="2">Jabatan</td>
+                <td style="width: 10px; height: 18px;">:</td>
+                <td style="width: 433px; height: 18px;" colspan="2">@Html.DisplayFor(model => model.Jabatan)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 151px; height: 18px;" colspan="2">Unit Kerja</td>
+                <td style="width: 10px; height: 18px;">:</td>
+                <td style="width: 433px; height: 18px;" colspan="2">@Html.DisplayFor(model => model.Unit)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 94px; height: 18px;">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 151px; height: 18px;" colspan="2">&nbsp;</td>
+                <td style="width: 10px; height: 18px;">&nbsp;</td>
+                <td style="width: 186px; height: 18px;">&nbsp;</td>
+                <td style="width: 241px; height: 18px;">&nbsp;</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px; vertical-align: top;">Untuk</td>
+                <td style="width: 10px; height: 10px; vertical-align: top;">:</td>
+                <td style="width: 14px; height: 10px; vertical-align: top;">1.</td>
+                <td style="width: 586px; height: 10px; text-align: justify;" colspan="4">Melakukan @Html.DisplayFor(model => model.Kegiatan), yang akan dilaksanakan pada :</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 186px; height: 10px;">&nbsp;</td>
+                <td style="width: 241px; height: 10px;">&nbsp;</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px;">Hari / Tanggal</td>
+                <td style="width: 10px; height: 10px;">:</td>
+                <td style="width: 433px; height: 10px;" colspan="2">@Html.DisplayFor(model => model.Hari_Tanggal_Keg)</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px; vertical-align: top;">Tempat</td>
+                <td style="width: 10px; height: 10px;">:</td>
+                <td style="width: 433px; height: 10px;" colspan="2">@Html.DisplayFor(model => model.Tempat_Keg)</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px;">Waktu</td>
+                <td style="width: 10px; height: 10px;">:</td>
+                <td style="width: 433px; height: 10px;" colspan="2">@Html.DisplayFor(model => model.Waktu_Keg)</td>
+            </tr>
+            <tr style="height: 10px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 186px; height: 10px;">&nbsp;</td>
+                <td style="width: 241px; height: 10px;">&nbsp;</td>
+            </tr>
+            <tr style="height: 20px;">
+                <td style="width: 94px; height: 20px;">&nbsp;</td>
+                <td style="width: 10px; height: 20px;">&nbsp;</td>
+                <td style="width: 14px; height: 20px; vertical-align: top;">2.</td>
+                <td style="width: 586px; height: 20px; vertical-align: top; text-align: justify;" colspan="4">Tugas tersebut dipertanggungjawabkan kepada Kepala Kantor Kementerian Agama Kota Tegal</td>
+            </tr>
+            <tr style="height: 11px;">
+                <td style="width: 94px; height: 11px;">&nbsp;</td>
+                <td style="width: 10px; height: 11px;">&nbsp;</td>
+                <td style="width: 14px; height: 11px; vertical-align: top;">3.</td>
+                <td style="width: 586px; height: 11px; vertical-align: top; text-align: justify;" colspan="4">Demikian untuk dilaksanakan dan diindahkan sebaik-baiknya</td>
+            </tr>
+            <tr style="height: 53px;">
+                <td style="width: 94px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 14px; height: 10px;">&nbsp;</td>
+                <td style="width: 131px; height: 10px;">&nbsp;</td>
+                <td style="width: 10px; height: 10px;">&nbsp;</td>
+                <td style="width: 186px; height: 10px;">&nbsp;</td>
+                <td style="width: 241px; height: 10px;">&nbsp;</td>
+            </tr>
+            <tr style="height: 207px;">
+                <td style="width: 94px; height: 122px;">&nbsp;</td>
+                <td style="width: 10px; height: 122px;">&nbsp;</td>
+                <td style="width: 14px; height: 122px;">&nbsp;</td>
+                <td style="width: 131px; height: 122px;">&nbsp;</td>
+                <td style="width: 10px; height: 122px;">&nbsp;</td>
+                <td style="width: 186px; height: 122px;">&nbsp;</td>
+                <td style="width: 241px; height: 122px;">
+                    <p>@Html.DisplayFor(model => model.Tempat_ttd), @Html.DisplayFor(model => model.Tanggal_ttd) <br />@Html.DisplayFor(model => model.Jabatan_ttd), <br /><br /><br /><br /><br /><br />@Html.DisplayFor(model => model.Penandatangan)</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</div>
+<div>
+    <a onclick="javascript:CallPrint('SrtTgs');" class="button"><span>Print</span></a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<script language="javascript" type="text/javascript">
+    function CallPrint(strid) {
+        var prtContent = document.getElementById(strid);
+        var WinPrint = window.open('', '', 'letf=0,top=0,width=800,height=100,toolbar=0,scrollbars=0,status=0,dir=ltr');
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+        WinPrint.close();
+        prtContent.innerHTML = strOldOne;
+    }
+</script>
